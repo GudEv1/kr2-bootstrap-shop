@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-lightning-charge-fill text-warning"></i> FitZone</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -40,13 +40,8 @@
   <main class="container my-4">
     <div class="row g-4">
       <div class="col-12 col-lg-6">
-        <div class="card shadow-sm">
-          <div class="placeholder-box bg-light border rounded d-flex align-items-center justify-content-center">
-            <div class="text-center p-5">
-              <i class="bi bi-trophy-fill display-1 text-warning"></i>
-              <p class="text-muted mt-3 mb-0">Фото абонемента</p>
-            </div>
-          </div>
+        <div class="card shadow-sm border-0">
+          <img class="membership-image" src="images/membership.jpg" alt="Абонемент FitZone «Безлимит» — доступ ко всем зонам клуба" width="600" height="380">
         </div>
       </div>
       <div class="col-12 col-lg-6">
@@ -64,7 +59,6 @@
       </div>
     </div>
 
-    <!-- Характеристики -->
     <section class="mt-5">
       <h2 class="h4 mb-3">Что входит в абонемент</h2>
       <div class="table-responsive">
@@ -87,56 +81,78 @@
       </div>
     </section>
 
-    <!-- Accordion FAQ -->
     <section class="mt-5">
       <h2 class="h4 mb-3">Частые вопросы</h2>
       <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
           <h3 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true">
               Можно ли заморозить абонемент?
             </button>
           </h3>
           <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              Да, абонемент можно заморозить на срок до 14 дней в году бесплатно. Для заморозки на больший срок обратитесь к администратору.
-            </div>
+            <div class="accordion-body">Да, абонемент можно заморозить на срок до 14 дней в году бесплатно.</div>
           </div>
         </div>
         <div class="accordion-item">
           <h3 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false">
               Нужна ли медицинская справка?
             </button>
           </h3>
           <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              Для посещения тренажёрного зала справка не обязательна, но рекомендуется. Для бассейна справка обязательна — её можно оформить у нашего врача.
-            </div>
+            <div class="accordion-body">Для тренажёрного зала — не обязательна, для бассейна — обязательна. Её можно оформить у нашего врача.</div>
           </div>
         </div>
         <div class="accordion-item">
           <h3 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false">
               Есть ли парковка?
             </button>
           </h3>
           <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              Да, для клиентов клуба доступна бесплатная охраняемая парковка на 50 мест. Въезд по клубной карте.
-            </div>
+            <div class="accordion-body">Да, бесплатная охраняемая парковка на 50 мест. Въезд по клубной карте.</div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-dark text-white py-4 mt-5">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2026 FitZone. Учебный проект.</p>
+  <footer class="site-footer text-white py-5 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3"><i class="bi bi-lightning-charge-fill text-warning"></i> FitZone</h3>
+          <p class="text-white-50 mb-0">Современный фитнес-клуб для всех уровней подготовки.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3">Навигация</h3>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="index.html">Главная</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="catalog.html">Расписание</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="product.html">Абонемент</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="order.html">Заявка</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3">Контакты</h3>
+          <ul class="list-unstyled text-white-50 mb-0">
+            <li class="mb-2"><i class="bi bi-geo-alt-fill text-warning"></i> г. Москва, ул. Спортивная, д. 12</li>
+            <li class="mb-2"><i class="bi bi-telephone-fill text-warning"></i> +7 (495) 123-45-67</li>
+            <li class="mb-2"><i class="bi bi-envelope-fill text-warning"></i> info@fitzone.ru</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="mb-0 text-white-50 text-center">&copy; 2026 FitZone. Учебный проект.</p>
     </div>
   </footer>
 
+  <button class="scroll-top-button" id="scrollTopButton" type="button" aria-label="Наверх">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
