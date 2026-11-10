@@ -35,10 +35,11 @@ body {
 }
 
 /* Кнопка «Наверх» */
+/* Кнопка «Наверх» */
 .scroll-top-button {
   position: fixed;
   bottom: 24px;
-  right: 24px;
+  right: 24px;  /* ← БЫЛО left: 24px, МЕНЯЕМ на right */
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -62,9 +63,19 @@ body {
   display: block;
 }
 
+.scroll-top-button:hover {
+  background-color: #e0a800;
+}
+
+.scroll-top-button.show {
+  display: block;
+}
+
 /* Подвал */
+/* Подвал — явный тёмный фон */
 .site-footer {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: #212529 !important;  /* ← Тёмный цвет Bootstrap bg-dark */
+  color: #ffffff;
 }
 
 .site-footer a {
