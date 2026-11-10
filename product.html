@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Абонемент «Безлимит» — FitZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-lightning-charge-fill text-warning"></i> FitZone</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Расписание</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="product.html">Абонемент</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item"><a href="catalog.html">Расписание</a></li>
+        <li class="breadcrumb-item active">Абонемент «Безлимит»</li>
+      </ol>
+    </nav>
+  </div>
+
+  <main class="container my-4">
+    <div class="row g-4">
+      <div class="col-12 col-lg-6">
+        <div class="card shadow-sm">
+          <div class="placeholder-box bg-light border rounded d-flex align-items-center justify-content-center">
+            <div class="text-center p-5">
+              <i class="bi bi-trophy-fill display-1 text-warning"></i>
+              <p class="text-muted mt-3 mb-0">Фото абонемента</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <span class="badge bg-danger mb-3">Хит продаж</span>
+        <h1 class="h2">Абонемент «Безлимит»</h1>
+        <p class="lead text-muted">Неограниченное посещение всех зон клуба: тренажёрный зал, бассейн, групповые занятия и сауна.</p>
+        <p class="fs-2 fw-bold text-primary">4 990 руб./мес</p>
+        <div class="d-flex gap-2 mb-4">
+          <a class="btn btn-primary btn-lg" href="order.html">Оформить абонемент</a>
+          <a class="btn btn-outline-secondary btn-lg" href="catalog.html">Назад к расписанию</a>
+        </div>
+        <div class="alert alert-warning" role="alert">
+          <i class="bi bi-gift-fill"></i> Первое пробное занятие — бесплатно!
+        </div>
+      </div>
+    </div>
+
+    <!-- Характеристики -->
+    <section class="mt-5">
+      <h2 class="h4 mb-3">Что входит в абонемент</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Услуга</th>
+              <th>Описание</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Тренажёрный зал</td><td>Без ограничений по времени</td></tr>
+            <tr><td>Бассейн 25 м</td><td>Ежедневно 7:00–22:00</td></tr>
+            <tr><td>Групповые занятия</td><td>Все направления по расписанию</td></tr>
+            <tr><td>Сауна</td><td>После каждой тренировки</td></tr>
+            <tr><td>Персональный шкафчик</td><td>На весь срок абонемента</td></tr>
+            <tr><td>Фитнес-тестирование</td><td>1 раз в месяц бесплатно</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Accordion FAQ -->
+    <section class="mt-5">
+      <h2 class="h4 mb-3">Частые вопросы</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+              Можно ли заморозить абонемент?
+            </button>
+          </h3>
+          <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Да, абонемент можно заморозить на срок до 14 дней в году бесплатно. Для заморозки на больший срок обратитесь к администратору.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+              Нужна ли медицинская справка?
+            </button>
+          </h3>
+          <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Для посещения тренажёрного зала справка не обязательна, но рекомендуется. Для бассейна справка обязательна — её можно оформить у нашего врача.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+              Есть ли парковка?
+            </button>
+          </h3>
+          <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Да, для клиентов клуба доступна бесплатная охраняемая парковка на 50 мест. Въезд по клубной карте.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2026 FitZone. Учебный проект.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
