@@ -85,3 +85,10 @@ body {
 .site-footer a:hover {
   color: #ffc107 !important;
 }
+
+/* Интерактивная карта на странице контактов */
+.map-frame {
+  display: block;
+  width: 100%;
+  border: 0;
+}

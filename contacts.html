@@ -90,18 +90,25 @@
     </div>
 
     <!-- Карта (заглушка) и форма -->
-    <div class="row g-4">
-      <div class="col-12 col-lg-6">
-        <h2 class="h4 mb-3">Как нас найти</h2>
-        <div class="card border-0 shadow-sm">
-          <div class="bg-light border rounded d-flex align-items-center justify-content-center" style="height: 380px;">
-            <div class="text-center p-4">
-              <i class="bi bi-map-fill display-1 text-primary"></i>
-              <p class="text-muted mt-3 mb-0">Здесь может быть интерактивная карта<br>(Яндекс.Карты или Google Maps)</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="col-12 col-lg-6">
+  <h2 class="h4 mb-3">Как нас найти</h2>
+  <div class="card border-0 shadow-sm overflow-hidden">
+    <iframe
+      class="map-frame"
+      src="https://yandex.ru/map-widget/v1/?text=Москва, Спортивная улица, 12&z=16"
+      width="100%"
+      height="380"
+      frameborder="0"
+      allowfullscreen="true"
+      loading="lazy"
+      title="Карта: фитнес-клуб FitZone, Москва, ул. Спортивная, д. 12">
+    </iframe>
+  </div>
+  <p class="text-muted small mt-2 mb-0">
+    <i class="bi bi-geo-alt-fill text-danger"></i>
+    Мы находимся в 5 минутах ходьбы от станции метро «Спортивная». Бесплатная парковка для клиентов клуба.
+  </p>
+</div>
       <div class="col-12 col-lg-6">
         <h2 class="h4 mb-3">Остались вопросы?</h2>
         <div class="card border-0 shadow-sm p-4">
