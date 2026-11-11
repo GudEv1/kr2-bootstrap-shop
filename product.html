@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Абонемент «Безлимит» FitZone — неограниченное посещение всех зон клуба: тренажёрный зал, бассейн, групповые занятия и сауна.">
   <title>Абонемент «Безлимит» — FitZone</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -10,9 +11,12 @@
 </head>
 <body>
 
+  <!-- Sticky навигация -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-lightning-charge-fill text-warning"></i> FitZone</a>
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-lightning-charge-fill text-warning"></i> FitZone
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,6 +31,7 @@
     </div>
   </nav>
 
+  <!-- Хлебные крошки -->
   <div class="container py-3">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb mb-0">
@@ -38,7 +43,9 @@
   </div>
 
   <main class="container my-4">
-    <div class="row g-4">
+
+    <!-- Hero-блок абонемента (1/2 экрана) -->
+    <div class="row g-4 align-items-center">
       <div class="col-12 col-lg-6">
         <div class="card shadow-sm border-0">
           <img class="membership-image" src="images/membership.jpg" alt="Абонемент FitZone «Безлимит» — доступ ко всем зонам клуба" width="600" height="380">
@@ -47,10 +54,15 @@
       <div class="col-12 col-lg-6">
         <span class="badge bg-danger mb-3">Хит продаж</span>
         <h1 class="h2">Абонемент «Безлимит»</h1>
-        <p class="lead text-muted">Неограниченное посещение всех зон клуба: тренажёрный зал, бассейн, групповые занятия и сауна.</p>
+        <p class="lead text-muted">
+          Неограниченное посещение всех зон клуба: тренажёрный зал, бассейн, групповые занятия и сауна.
+          Идеальный выбор для тех, кто хочет получить максимум от тренировок.
+        </p>
         <p class="fs-2 fw-bold text-primary">4 990 руб./мес</p>
         <div class="d-flex gap-2 mb-4">
-          <a class="btn btn-primary btn-lg" href="order.html">Оформить абонемент</a>
+          <a class="btn btn-primary btn-lg" href="order.html">
+            <i class="bi bi-pencil-square"></i> Оформить абонемент
+          </a>
           <a class="btn btn-outline-secondary btn-lg" href="catalog.html">Назад к расписанию</a>
         </div>
         <div class="alert alert-warning" role="alert">
@@ -59,28 +71,111 @@
       </div>
     </div>
 
+    <!-- Таблица характеристик -->
     <section class="mt-5">
       <h2 class="h4 mb-3">Что входит в абонемент</h2>
       <div class="table-responsive">
         <table class="table table-striped table-bordered align-middle">
+          <caption class="text-muted">Полный перечень услуг абонемента «Безлимит»</caption>
           <thead class="table-dark">
             <tr>
-              <th>Услуга</th>
-              <th>Описание</th>
+              <th scope="col">Услуга</th>
+              <th scope="col">Описание</th>
+              <th scope="col">Доступность</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>Тренажёрный зал</td><td>Без ограничений по времени</td></tr>
-            <tr><td>Бассейн 25 м</td><td>Ежедневно 7:00–22:00</td></tr>
-            <tr><td>Групповые занятия</td><td>Все направления по расписанию</td></tr>
-            <tr><td>Сауна</td><td>После каждой тренировки</td></tr>
-            <tr><td>Персональный шкафчик</td><td>На весь срок абонемента</td></tr>
-            <tr><td>Фитнес-тестирование</td><td>1 раз в месяц бесплатно</td></tr>
+            <tr>
+              <td><i class="bi bi-trophy-fill text-warning"></i> Тренажёрный зал</td>
+              <td>Современное оборудование от ведущих мировых производителей</td>
+              <td>Круглосуточно</td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-droplet-fill text-primary"></i> Бассейн 25 м</td>
+              <td>Система очистки воды, комфортная температура</td>
+              <td>Ежедневно 7:00–22:00</td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-people-fill text-success"></i> Групповые занятия</td>
+              <td>Все направления по расписанию: CrossFit, йога, пилатес, бокс</td>
+              <td>По расписанию</td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-thermometer-half text-danger"></i> Сауна</td>
+              <td>Финская сауна с зоной отдыха</td>
+              <td>После каждой тренировки</td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-lock-fill text-secondary"></i> Персональный шкафчик</td>
+              <td>Индивидуальный шкафчик с замком на весь срок абонемента</td>
+              <td>Постоянно</td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-clipboard2-pulse-fill text-info"></i> Фитнес-тестирование</td>
+              <td>Оценка физической подготовки и рекомендации тренера</td>
+              <td>1 раз в месяц</td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-car-front-fill text-warning"></i> Парковка</td>
+              <td>Бесплатная охраняемая парковка на 50 мест</td>
+              <td>По клубной карте</td>
+            </tr>
           </tbody>
         </table>
       </div>
     </section>
 
+    <!-- Сравнение тарифов (1/2 экрана) -->
+    <section class="mt-5">
+      <h2 class="h4 mb-4 text-center">Сравнение тарифов</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <h3 class="h5">Базовый</h3>
+            <p class="display-6 fw-bold text-primary mb-2">2 990 руб.</p>
+            <p class="text-muted mb-3">Только тренажёрный зал</p>
+            <ul class="list-unstyled text-start mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Тренажёрный зал</li>
+              <li class="mb-2"><i class="bi bi-x-circle-fill text-danger"></i> Бассейн</li>
+              <li class="mb-2"><i class="bi bi-x-circle-fill text-danger"></i> Групповые занятия</li>
+              <li class="mb-2"><i class="bi bi-x-circle-fill text-danger"></i> Сауна</li>
+            </ul>
+            <a class="btn btn-outline-primary mt-auto" href="order.html">Выбрать</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 p-4 text-center border-primary border-2 shadow">
+            <span class="badge bg-danger mb-2">Популярный</span>
+            <h3 class="h5">Безлимит</h3>
+            <p class="display-6 fw-bold text-primary mb-2">4 990 руб.</p>
+            <p class="text-muted mb-3">Всё включено</p>
+            <ul class="list-unstyled text-start mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Тренажёрный зал</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Бассейн</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Групповые занятия</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Сауна</li>
+            </ul>
+            <a class="btn btn-primary mt-auto" href="order.html">Выбрать</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <h3 class="h5">Премиум</h3>
+            <p class="display-6 fw-bold text-primary mb-2">7 990 руб.</p>
+            <p class="text-muted mb-3">Персональный тренер</p>
+            <ul class="list-unstyled text-start mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Всё из «Безлимит»</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 4 тренировки с тренером</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Программа питания</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Массаж 2 раза в месяц</li>
+            </ul>
+            <a class="btn btn-outline-primary mt-auto" href="order.html">Выбрать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accordion FAQ (2/2 экрана) -->
     <section class="mt-5">
       <h2 class="h4 mb-3">Частые вопросы</h2>
       <div class="accordion" id="faqAccordion">
@@ -91,7 +186,9 @@
             </button>
           </h3>
           <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Да, абонемент можно заморозить на срок до 14 дней в году бесплатно.</div>
+            <div class="accordion-body">
+              Да, абонемент можно заморозить на срок до 14 дней в году бесплатно. Для заморозки на больший срок обратитесь к администратору — стоимость услуги составляет 200 руб. за каждый дополнительный день.
+            </div>
           </div>
         </div>
         <div class="accordion-item">
@@ -101,7 +198,9 @@
             </button>
           </h3>
           <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Для тренажёрного зала — не обязательна, для бассейна — обязательна. Её можно оформить у нашего врача.</div>
+            <div class="accordion-body">
+              Для посещения тренажёрного зала справка не обязательна, но рекомендуется. Для бассейна справка обязательна — её можно оформить у нашего врача прямо в клубе за 500 руб. или принести свою из поликлиники.
+            </div>
           </div>
         </div>
         <div class="accordion-item">
@@ -111,48 +210,95 @@
             </button>
           </h3>
           <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Да, бесплатная охраняемая парковка на 50 мест. Въезд по клубной карте.</div>
+            <div class="accordion-body">
+              Да, для клиентов клуба доступна бесплатная охраняемая парковка на 50 мест. Въезд осуществляется по клубной карте. Для гостей парковка платная — 100 руб./час.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false">
+              Можно ли вернуть деньги за абонемент?
+            </button>
+          </h3>
+          <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Возврат возможен в течение 14 дней с момента покупки, если абонемент не был активирован. После активации возврат осуществляется пропорционально неиспользованному периоду за вычетом 10% комиссии.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false">
+              Есть ли скидки для студентов и пенсионеров?
+            </button>
+          </h3>
+          <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Да! Студентам очной формы обучения предоставляется скидка 15% при предъявлении студенческого билета. Пенсионерам — скидка 20% в утренние часы (с 7:00 до 12:00). Скидки не суммируются с другими акциями.
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- CTA-блок -->
+    <section class="bg-primary text-white py-5 mt-5 rounded-3">
+      <div class="container text-center">
+        <h2 class="display-6 fw-bold mb-3">Готов начать тренировки?</h2>
+        <p class="lead mb-4">Оформи абонемент сегодня и получи первое занятие бесплатно!</p>
+        <a class="btn btn-warning btn-lg fw-bold" href="order.html">
+          <i class="bi bi-telephone-fill"></i> Записаться на пробное занятие
+        </a>
+      </div>
+    </section>
+
   </main>
 
-<footer class="site-footer text-white py-5 mt-5">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-12 col-md-4">
-        <h3 class="h5 fw-bold mb-3">
-          <i class="bi bi-lightning-charge-fill text-warning"></i> FitZone
-        </h3>
-        <p class="text-white-50 mb-0">
-          Современный фитнес-клуб для всех уровней подготовки.
-        </p>
+  <!-- Тёмный подвал -->
+  <footer class="site-footer text-white py-5 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3">
+            <i class="bi bi-lightning-charge-fill text-warning"></i> FitZone
+          </h3>
+          <p class="text-white-50 mb-0">Современный фитнес-клуб для всех уровней подготовки. Работаем с 2015 года.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3">Навигация</h3>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="index.html">Главная</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="catalog.html">Расписание</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="product.html">Абонемент</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="order.html">Заявка</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3">Контакты</h3>
+          <ul class="list-unstyled text-white-50 mb-0">
+            <li class="mb-2"><i class="bi bi-geo-alt-fill text-warning"></i> г. Москва, ул. Спортивная, д. 12</li>
+            <li class="mb-2"><i class="bi bi-telephone-fill text-warning"></i> +7 (495) 123-45-67</li>
+            <li class="mb-2"><i class="bi bi-envelope-fill text-warning"></i> info@fitzone.ru</li>
+            <li class="mb-2"><i class="bi bi-clock-fill text-warning"></i> Круглосуточно, 24/7</li>
+          </ul>
+        </div>
       </div>
-      <div class="col-12 col-md-4">
-        <h3 class="h5 fw-bold mb-3">Навигация</h3>
-        <ul class="list-unstyled mb-0">
-          <li class="mb-2"><a class="text-white-50 text-decoration-none" href="index.html">Главная</a></li>
-          <li class="mb-2"><a class="text-white-50 text-decoration-none" href="catalog.html">Расписание</a></li>
-          <li class="mb-2"><a class="text-white-50 text-decoration-none" href="product.html">Абонемент</a></li>
-          <li class="mb-2"><a class="text-white-50 text-decoration-none" href="order.html">Заявка</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4">
-        <h3 class="h5 fw-bold mb-3">Контакты</h3>
-        <ul class="list-unstyled text-white-50 mb-0">
-          <li class="mb-2"><i class="bi bi-geo-alt-fill text-warning"></i> г. Москва, ул. Спортивная, д. 12</li>
-          <li class="mb-2"><i class="bi bi-telephone-fill text-warning"></i> +7 (495) 123-45-67</li>
-          <li class="mb-2"><i class="bi bi-envelope-fill text-warning"></i> info@fitzone.ru</li>
-          <li class="mb-2"><i class="bi bi-clock-fill text-warning"></i> Круглосуточно, 24/7</li>
-        </ul>
+      <hr class="border-secondary my-4">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <p class="mb-0 text-white-50">&copy; 2026 FitZone. Учебный проект.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a class="text-white-50 me-3" href="#"><i class="bi bi-telegram fs-5"></i></a>
+          <a class="text-white-50 me-3" href="#"><i class="bi bi-instagram fs-5"></i></a>
+          <a class="text-white-50" href="#"><i class="bi bi-youtube fs-5"></i></a>
+        </div>
       </div>
     </div>
-    <hr class="border-secondary my-4">
-    <p class="mb-0 text-white-50 text-center">&copy; 2026 FitZone. Учебный проект.</p>
-  </div>
-</footer>
+  </footer>
 
+  <!-- Кнопка «Наверх» -->
   <button class="scroll-top-button" id="scrollTopButton" type="button" aria-label="Наверх">
     <i class="bi bi-arrow-up"></i>
   </button>

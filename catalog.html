@@ -10,12 +10,9 @@
 </head>
 <body>
 
-  <!-- Sticky навигация -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">
-        <i class="bi bi-lightning-charge-fill text-warning"></i> FitZone
-      </a>
+      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-lightning-charge-fill text-warning"></i> FitZone</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,7 +27,6 @@
     </div>
   </nav>
 
-  <!-- Хлебные крошки -->
   <div class="container py-3">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb mb-0">
@@ -50,97 +46,130 @@
       <i class="bi bi-info-circle-fill"></i> Первое пробное занятие по любому направлению — бесплатно!
     </div>
 
-    <!-- Сетка из 6 карточек -->
+    <!-- НОВЫЙ БЛОК: Информация о занятиях (1/2 экрана) -->
+    <section class="my-5">
+      <h2 class="h4 mb-4">Как проходят наши занятия</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-clock-fill display-5 text-primary mb-3"></i>
+            <h3 class="h5">Длительность</h3>
+            <p class="text-muted mb-0">Каждое занятие длится 60-90 минут в зависимости от направления и уровня подготовки.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-people-fill display-5 text-success mb-3"></i>
+            <h3 class="h5">Группы</h3>
+            <p class="text-muted mb-0">Мини-группы до 12 человек для персонального внимания тренера к каждому участнику.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-graph-up-arrow display-5 text-warning mb-3"></i>
+            <h3 class="h5">Прогресс</h3>
+            <p class="text-muted mb-0">Регулярное тестирование и корректировка программы для достижения ваших целей.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Сетка из 6 карточек (2/2 экрана) -->
     <div class="row g-4">
-      
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-start mb-3">
-              <h2 class="card-title h5">CrossFit</h2>
-              <span class="badge bg-danger">Хит</span>
-            </div>
-            <p class="card-text text-muted">Пн, Ср, Пт — 19:00. Тренер: Алексей.</p>
-            <p class="fw-bold fs-5 mt-auto">3 500 руб./мес</p>
-            <a class="btn btn-primary" href="product.html">Подробнее</a>
-          </div>
+  
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/crossfit.jpg" class="card-img-top" alt="CrossFit тренировки в FitZone" height="200">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <h2 class="card-title h5">CrossFit</h2>
+          <span class="badge bg-danger">Хит</span>
         </div>
+        <p class="card-text text-muted">Пн, Ср, Пт — 19:00. Тренер: Алексей.</p>
+        <p class="fw-bold fs-5 mt-auto">3 500 руб./мес</p>
+        <a class="btn btn-primary" href="product.html">Подробнее</a>
       </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-start mb-3">
-              <h2 class="card-title h5">Йога</h2>
-              <span class="badge bg-success">Новинка</span>
-            </div>
-            <p class="card-text text-muted">Вт, Чт — 10:00. Тренер: Мария.</p>
-            <p class="fw-bold fs-5 mt-auto">2 800 руб./мес</p>
-            <a class="btn btn-primary" href="product.html">Подробнее</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-start mb-3">
-              <h2 class="card-title h5">Плавание</h2>
-              <span class="badge bg-warning text-dark">Скидка</span>
-            </div>
-            <p class="card-text text-muted">Ежедневно — 7:00–22:00. Тренер: Дмитрий.</p>
-            <p class="fw-bold fs-5 mt-auto">2 200 руб./мес</p>
-            <a class="btn btn-primary" href="product.html">Подробнее</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-start mb-3">
-              <h2 class="card-title h5">Пилатес</h2>
-              <span class="badge bg-info text-dark">Групповое</span>
-            </div>
-            <p class="card-text text-muted">Пн, Ср — 18:00. Тренер: Анна.</p>
-            <p class="fw-bold fs-5 mt-auto">2 600 руб./мес</p>
-            <a class="btn btn-primary" href="product.html">Подробнее</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-start mb-3">
-              <h2 class="card-title h5">Бокс</h2>
-              <span class="badge bg-secondary">Силовое</span>
-            </div>
-            <p class="card-text text-muted">Вт, Чт, Сб — 20:00. Тренер: Иван.</p>
-            <p class="fw-bold fs-5 mt-auto">3 200 руб./мес</p>
-            <a class="btn btn-primary" href="product.html">Подробнее</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-start mb-3">
-              <h2 class="card-title h5">Stretching</h2>
-              <span class="badge bg-primary">Растяжка</span>
-            </div>
-            <p class="card-text text-muted">Пн–Пт — 9:00. Тренер: Ольга.</p>
-            <p class="fw-bold fs-5 mt-auto">2 000 руб./мес</p>
-            <a class="btn btn-primary" href="product.html">Подробнее</a>
-          </div>
-        </div>
-      </div>
-
     </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/yoga.jpg" class="card-img-top" alt="Занятия йогой в FitZone" height="200">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <h2 class="card-title h5">Йога</h2>
+          <span class="badge bg-success">Новинка</span>
+        </div>
+        <p class="card-text text-muted">Вт, Чт — 10:00. Тренер: Мария.</p>
+        <p class="fw-bold fs-5 mt-auto">2 800 руб./мес</p>
+        <a class="btn btn-primary" href="product.html">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/swimming.jpg" class="card-img-top" alt="Бассейн 25 метров в FitZone" height="200">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <h2 class="card-title h5">Плавание</h2>
+          <span class="badge bg-warning text-dark">Скидка</span>
+        </div>
+        <p class="card-text text-muted">Ежедневно — 7:00–22:00. Тренер: Дмитрий.</p>
+        <p class="fw-bold fs-5 mt-auto">2 200 руб./мес</p>
+        <a class="btn btn-primary" href="product.html">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/pilates.jpg" class="card-img-top" alt="Пилатес в FitZone" height="200">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <h2 class="card-title h5">Пилатес</h2>
+          <span class="badge bg-info text-dark">Групповое</span>
+        </div>
+        <p class="card-text text-muted">Пн, Ср — 18:00. Тренер: Анна.</p>
+        <p class="fw-bold fs-5 mt-auto">2 600 руб./мес</p>
+        <a class="btn btn-primary" href="product.html">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/boxing.jpg" class="card-img-top" alt="Бокс в FitZone" height="200">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <h2 class="card-title h5">Бокс</h2>
+          <span class="badge bg-secondary">Силовое</span>
+        </div>
+        <p class="card-text text-muted">Вт, Чт, Сб — 20:00. Тренер: Иван.</p>
+        <p class="fw-bold fs-5 mt-auto">3 200 руб./мес</p>
+        <a class="btn btn-primary" href="product.html">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/stretching.jpg" class="card-img-top" alt="Stretching в FitZone" height="200">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <h2 class="card-title h5">Stretching</h2>
+          <span class="badge bg-primary">Растяжка</span>
+        </div>
+        <p class="card-text text-muted">Пн–Пт — 9:00. Тренер: Ольга.</p>
+        <p class="fw-bold fs-5 mt-auto">2 000 руб./мес</p>
+        <a class="btn btn-primary" href="product.html">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+</div>
   </main>
 
-  <!-- Тёмный подвал -->
   <footer class="site-footer text-white py-5 mt-5">
     <div class="container">
       <div class="row g-4">
@@ -171,7 +200,6 @@
     </div>
   </footer>
 
-  <!-- Кнопка «Наверх» -->
   <button class="scroll-top-button" id="scrollTopButton" type="button" aria-label="Наверх">
     <i class="bi bi-arrow-up"></i>
   </button>

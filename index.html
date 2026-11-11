@@ -31,7 +31,7 @@
     </div>
   </nav>
 
-  <!-- Hero с фото зала -->
+  <!-- Hero-блок (1/3 экрана) -->
   <section class="bg-primary text-white py-5">
     <div class="container">
       <div class="row align-items-center g-4">
@@ -43,13 +43,13 @@
           </a>
         </div>
         <div class="col-12 col-lg-6">
-          <img class="hero-image" src="images/club.jpg" alt="Тренажёрный зал FitZone с современным оборудованием" width="600" height="360">
+          <img class="hero-image" src="images/gym.jpg" alt="Тренажёрный зал FitZone с современным оборудованием" width="600" height="360">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Преимущества -->
+  <!-- Преимущества (2/3 экрана) -->
   <section class="container my-5">
     <h2 class="text-center mb-4">Почему выбирают FitZone</h2>
     <div class="row g-4">
@@ -77,50 +77,100 @@
     </div>
   </section>
 
-  <!-- Популярные направления -->
-  <section class="bg-light py-5">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="mb-0">Популярные направления</h2>
-        <a class="btn btn-outline-primary" href="catalog.html">Всё расписание</a>
+  <!-- Популярные направления (3/3 экрана) -->
+  <div class="row g-4">
+  
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/crossfit.jpg" class="card-img-top" alt="CrossFit тренировки в FitZone" height="200">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <h2 class="card-title h5">CrossFit</h2>
+          <span class="badge bg-danger">Хит</span>
+        </div>
+        <p class="card-text text-muted">Пн, Ср, Пт — 19:00. Тренер: Алексей.</p>
+        <p class="fw-bold fs-5 mt-auto">3 500 руб./мес</p>
+        <a class="btn btn-primary" href="product.html">Подробнее</a>
       </div>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <h3 class="card-title h5 mb-0">CrossFit</h3>
-                <span class="badge bg-danger">Хит</span>
-              </div>
-              <p class="card-text text-muted">Высокоинтенсивные функциональные тренировки для развития силы и выносливости.</p>
-              <p class="fw-bold fs-5 mt-auto mb-3">от 3 500 руб./мес</p>
-              <a class="btn btn-primary" href="product.html">Подробнее</a>
-            </div>
-          </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/yoga.jpg" class="card-img-top" alt="Занятия йогой в FitZone" height="200">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <h2 class="card-title h5">Йога</h2>
+          <span class="badge bg-success">Новинка</span>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <h3 class="card-title h5 mb-0">Йога</h3>
-                <span class="badge bg-success">Новинка</span>
-              </div>
-              <p class="card-text text-muted">Гармония тела и разума. Групповые и индивидуальные занятия с мастером.</p>
-              <p class="fw-bold fs-5 mt-auto mb-3">от 2 800 руб./мес</p>
-              <a class="btn btn-primary" href="product.html">Подробнее</a>
-            </div>
-          </div>
+        <p class="card-text text-muted">Вт, Чт — 10:00. Тренер: Мария.</p>
+        <p class="fw-bold fs-5 mt-auto">2 800 руб./мес</p>
+        <a class="btn btn-primary" href="product.html">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/swimming.jpg" class="card-img-top" alt="Бассейн 25 метров в FitZone" height="200">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <h2 class="card-title h5">Плавание</h2>
+          <span class="badge bg-warning text-dark">Скидка</span>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <h3 class="card-title h5 mb-0">Плавание</h3>
-                <span class="badge bg-warning text-dark">Скидка</span>
-              </div>
-              <p class="card-text text-muted">Занятия в бассейне 25 метров с тренером. Для любого уровня подготовки.</p>
-              <p class="fw-bold fs-5 mt-auto mb-3">от 2 200 руб./мес</p>
-              <a class="btn btn-primary" href="product.html">Подробнее</a>
+        <p class="card-text text-muted">Ежедневно — 7:00–22:00. Тренер: Дмитрий.</p>
+        <p class="fw-bold fs-5 mt-auto">2 200 руб./мес</p>
+        <a class="btn btn-primary" href="product.html">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/pilates.jpg" class="card-img-top" alt="Пилатес в FitZone" height="200">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <h2 class="card-title h5">Пилатес</h2>
+          <span class="badge bg-info text-dark">Групповое</span>
+        </div>
+        <p class="card-text text-muted">Пн, Ср — 18:00. Тренер: Анна.</p>
+        <p class="fw-bold fs-5 mt-auto">2 600 руб./мес</p>
+        <a class="btn btn-primary" href="product.html">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/boxing.jpg" class="card-img-top" alt="Бокс в FitZone" height="200">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <h2 class="card-title h5">Бокс</h2>
+          <span class="badge bg-secondary">Силовое</span>
+        </div>
+        <p class="card-text text-muted">Вт, Чт, Сб — 20:00. Тренер: Иван.</p>
+        <p class="fw-bold fs-5 mt-auto">3 200 руб./мес</p>
+        <a class="btn btn-primary" href="product.html">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/stretching.jpg" class="card-img-top" alt="Stretching в FitZone" height="200">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <h2 class="card-title h5">Stretching</h2>
+          <span class="badge bg-primary">Растяжка</span>
+        </div>
+        <p class="card-text text-muted">Пн–Пт — 9:00. Тренер: Ольга.</p>
+        <p class="fw-bold fs-5 mt-auto">2 000 руб./мес</p>
+        <a class="btn btn-primary" href="product.html">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+</div>
             </div>
           </div>
         </div>
@@ -128,41 +178,173 @@
     </div>
   </section>
 
-  <!-- Расширенный подвал -->
-<footer class="site-footer text-white py-5 mt-5">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-12 col-md-4">
-        <h3 class="h5 fw-bold mb-3">
-          <i class="bi bi-lightning-charge-fill text-warning"></i> FitZone
-        </h3>
-        <p class="text-white-50 mb-0">
-          Современный фитнес-клуб для всех уровней подготовки.
-        </p>
+  <!-- НОВЫЙ БЛОК: О клубе (1/3 экрана) -->
+  <section class="container my-5">
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-lg-6">
+        <img class="hero-image" src="images/membership.jpg" alt="Интерьер фитнес-клуба FitZone" width="600" height="360">
       </div>
-      <div class="col-12 col-md-4">
-        <h3 class="h5 fw-bold mb-3">Навигация</h3>
-        <ul class="list-unstyled mb-0">
-          <li class="mb-2"><a class="text-white-50 text-decoration-none" href="index.html">Главная</a></li>
-          <li class="mb-2"><a class="text-white-50 text-decoration-none" href="catalog.html">Расписание</a></li>
-          <li class="mb-2"><a class="text-white-50 text-decoration-none" href="product.html">Абонемент</a></li>
-          <li class="mb-2"><a class="text-white-50 text-decoration-none" href="order.html">Заявка</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4">
-        <h3 class="h5 fw-bold mb-3">Контакты</h3>
-        <ul class="list-unstyled text-white-50 mb-0">
-          <li class="mb-2"><i class="bi bi-geo-alt-fill text-warning"></i> г. Москва, ул. Спортивная, д. 12</li>
-          <li class="mb-2"><i class="bi bi-telephone-fill text-warning"></i> +7 (495) 123-45-67</li>
-          <li class="mb-2"><i class="bi bi-envelope-fill text-warning"></i> info@fitzone.ru</li>
-          <li class="mb-2"><i class="bi bi-clock-fill text-warning"></i> Круглосуточно, 24/7</li>
-        </ul>
+      <div class="col-12 col-lg-6">
+        <h2 class="mb-4">О клубе FitZone</h2>
+        <p class="lead text-muted">FitZone — это не просто тренажёрный зал, это сообщество единомышленников, которые стремятся к здоровому образу жизни и физическому совершенству.</p>
+        <p>Мы работаем с 2015 года и за это время помогли более чем 5000 клиентов достичь их фитнес-целей. Наш клуб оснащён современным оборудованием от ведущих мировых производителей, а команда профессиональных тренеров готова поддержать вас на каждом этапе пути.</p>
+        <div class="row g-3 mt-4">
+          <div class="col-6">
+            <div class="text-center p-3 bg-light rounded">
+              <h3 class="display-6 fw-bold text-primary">5000+</h3>
+              <p class="mb-0">Довольных клиентов</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="text-center p-3 bg-light rounded">
+              <h3 class="display-6 fw-bold text-primary">15</h3>
+              <p class="mb-0">Профессиональных тренеров</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <hr class="border-secondary my-4">
-    <p class="mb-0 text-white-50 text-center">&copy; 2026 FitZone. Учебный проект.</p>
-  </div>
-</footer>
+  </section>
+
+  <!-- НОВЫЙ БЛОК: Наши тренеры (2/3 экрана) -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Наши тренеры</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 text-center p-4">
+            <div class="bg-primary bg-opacity-10 rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+              <i class="bi bi-person-fill display-4 text-primary"></i>
+            </div>
+            <h3 class="h5">Алексей Петров</h3>
+            <p class="text-muted mb-2">CrossFit, функциональный тренинг</p>
+            <p class="small text-muted">Опыт: 8 лет. Сертифицированный тренер CrossFit Level 2.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 text-center p-4">
+            <div class="bg-success bg-opacity-10 rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+              <i class="bi bi-person-fill display-4 text-success"></i>
+            </div>
+            <h3 class="h5">Мария Иванова</h3>
+            <p class="text-muted mb-2">Йога, медитация</p>
+            <p class="small text-muted">Опыт: 10 лет. Мастер хатха-йоги и пранаямы.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 text-center p-4">
+            <div class="bg-warning bg-opacity-10 rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+              <i class="bi bi-person-fill display-4 text-warning"></i>
+            </div>
+            <h3 class="h5">Дмитрий Сидоров</h3>
+            <p class="text-muted mb-2">Плавание, аквааэробика</p>
+            <p class="small text-muted">Опыт: 12 лет. Мастер спорта по плаванию.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 text-center p-4">
+            <div class="bg-info bg-opacity-10 rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+              <i class="bi bi-person-fill display-4 text-info"></i>
+            </div>
+            <h3 class="h5">Анна Козлова</h3>
+            <p class="text-muted mb-2">Пилатес, stretching</p>
+            <p class="small text-muted">Опыт: 7 лет. Сертифицированный инструктор пилатеса.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- НОВЫЙ БЛОК: Отзывы клиентов (3/3 экрана) -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Отзывы наших клиентов</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 p-4">
+          <div class="d-flex align-items-center mb-3">
+            <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+              <i class="bi bi-person-fill text-primary"></i>
+            </div>
+            <div>
+              <h3 class="h6 mb-0">Елена Смирнова</h3>
+              <div class="text-warning">★★★★★</div>
+            </div>
+          </div>
+          <p class="text-muted mb-0">"Занимаюсь в FitZone уже полгода. Потрясающая атмосфера, профессиональные тренеры. Сбросила 8 кг и чувствую себя отлично!"</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 p-4">
+          <div class="d-flex align-items-center mb-3">
+            <div class="bg-success bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+              <i class="bi bi-person-fill text-success"></i>
+            </div>
+            <div>
+              <h3 class="h6 mb-0">Иван Кузнецов</h3>
+              <div class="text-warning">★★★★★</div>
+            </div>
+          </div>
+          <p class="text-muted mb-0">"CrossFit с Алексеем — это нечто! Каждый тренировка как вызов самому себе. Рекомендую всем, кто хочет реальных результатов."</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 p-4">
+          <div class="d-flex align-items-center mb-3">
+            <div class="bg-warning bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+              <i class="bi bi-person-fill text-warning"></i>
+            </div>
+            <div>
+              <h3 class="h6 mb-0">Ольга Новикова</h3>
+              <div class="text-warning">★★★★☆</div>
+            </div>
+          </div>
+          <p class="text-muted mb-0">"Йога с Марией — это мой способ расслабиться после рабочего дня. Отличный бассейн, чистая вода, приятная температура."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- НОВЫЙ БЛОК: CTA (призыв к действию) -->
+  <section class="bg-primary text-white py-5">
+    <div class="container text-center">
+      <h2 class="display-5 fw-bold mb-4">Готов начать свой путь к здоровью?</h2>
+      <p class="lead mb-4">Запишись на бесплатное пробное занятие прямо сейчас и получи скидку 20% на первый абонемент!</p>
+      <a class="btn btn-warning btn-lg fw-bold" href="order.html">
+        <i class="bi bi-telephone-fill"></i> Записаться на пробное занятие
+      </a>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="site-footer text-white py-5 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3"><i class="bi bi-lightning-charge-fill text-warning"></i> FitZone</h3>
+          <p class="text-white-50 mb-0">Современный фитнес-клуб для всех уровней подготовки.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3">Навигация</h3>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="index.html">Главная</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="catalog.html">Расписание</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="product.html">Абонемент</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="order.html">Заявка</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3">Контакты</h3>
+          <ul class="list-unstyled text-white-50 mb-0">
+            <li class="mb-2"><i class="bi bi-geo-alt-fill text-warning"></i> г. Москва, ул. Спортивная, д. 12</li>
+            <li class="mb-2"><i class="bi bi-telephone-fill text-warning"></i> +7 (495) 123-45-67</li>
+            <li class="mb-2"><i class="bi bi-envelope-fill text-warning"></i> info@fitzone.ru</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="mb-0 text-white-50 text-center">&copy; 2026 FitZone. Учебный проект.</p>
+    </div>
+  </footer>
 
   <!-- Кнопка «Наверх» -->
   <button class="scroll-top-button" id="scrollTopButton" type="button" aria-label="Наверх">
