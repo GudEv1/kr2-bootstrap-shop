@@ -15,32 +15,26 @@ if (scrollTopButton) {
   });
 }
 
-// Обработка формы заявки
+// Обработка формы заявки в модальном окне
 const orderForm = document.getElementById('orderForm');
 const successAlert = document.getElementById('successAlert');
+const submitOrderBtn = document.getElementById('submitOrder');
 
-if (orderForm) {
-  orderForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-
+if (submitOrderBtn && orderForm) {
+  submitOrderBtn.addEventListener('click', () => {
     if (!orderForm.checkValidity()) {
       orderForm.classList.add('was-validated');
       return;
     }
 
-    // Показываем сообщение об успехе
     successAlert.classList.remove('d-none');
-
-    // Сбрасываем форму и убираем валидацию
     orderForm.reset();
     orderForm.classList.remove('was-validated');
 
-    // Скрываем сообщение через 4 секунды
     setTimeout(() => {
+      const modal = bootstrap.Modal.getInstance(document.getElementById('orderModal'));
+      if (modal) modal.hide();
       successAlert.classList.add('d-none');
-    }, 4000);
-
-    // Прокручиваем к сообщению
-    successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 2500);
   });
 }

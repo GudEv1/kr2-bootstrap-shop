@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контакты фитнес-клуба FitZone: адрес, телефон, часы работы, форма обратной связи.">
+  <title>Контакты — FitZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-lightning-charge-fill text-warning"></i> FitZone
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Расписание</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Абонемент</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item active">Контакты</li>
+      </ol>
+    </nav>
+  </div>
+
+  <main class="container my-4">
+    <h1 class="h2 mb-4">Свяжитесь с нами</h1>
+    <p class="lead text-muted">Мы всегда рады ответить на ваши вопросы и помочь выбрать подходящее направление.</p>
+
+    <!-- Карточки контактов -->
+    <div class="row g-4 mt-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 text-center p-4 shadow-sm">
+          <i class="bi bi-geo-alt-fill display-5 text-primary mb-3"></i>
+          <h3 class="h6">Адрес</h3>
+          <p class="text-muted mb-0">г. Москва, ул. Спортивная, д. 12</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 text-center p-4 shadow-sm">
+          <i class="bi bi-telephone-fill display-5 text-success mb-3"></i>
+          <h3 class="h6">Телефон</h3>
+          <p class="text-muted mb-0"><a href="tel:+74951234567" class="text-decoration-none">+7 (495) 123-45-67</a></p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 text-center p-4 shadow-sm">
+          <i class="bi bi-clock-fill display-5 text-warning mb-3"></i>
+          <h3 class="h6">Часы работы</h3>
+          <p class="text-muted mb-0">Круглосуточно, 24/7</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 text-center p-4 shadow-sm">
+          <i class="bi bi-envelope-fill display-5 text-info mb-3"></i>
+          <h3 class="h6">E-mail</h3>
+          <p class="text-muted mb-0"><a href="mailto:info@fitzone.ru" class="text-decoration-none">info@fitzone.ru</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Как добраться -->
+    <section class="mt-5">
+      <h2 class="h4 mb-3">Как добраться</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-12 col-lg-6">
+          <div class="bg-light border rounded p-4" style="min-height: 280px;">
+            <div class="d-flex flex-column align-items-center justify-content-center h-100 text-muted">
+              <i class="bi bi-map display-4 mb-3"></i>
+              <p class="mb-0">Здесь будет карта</p>
+              <small>Яндекс.Карты или Google Maps</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <h3 class="h5">Общественный транспорт</h3>
+          <ul class="text-muted mb-4">
+            <li>Метро «Спортивная» — 5 минут пешком</li>
+            <li>Автобусы №15, №42 — остановка «Фитнес-клуб»</li>
+            <li>Трамвай №7 — остановка «ул. Спортивная»</li>
+          </ul>
+          <h3 class="h5">На автомобиле</h3>
+          <p class="text-muted mb-0">Бесплатная охраняемая парковка на 50 мест для клиентов клуба. Въезд по клубной карте.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA: открыть форму заявки -->
+    <section class="bg-primary text-white py-5 mt-5 rounded-3">
+      <div class="container text-center">
+        <h2 class="display-6 fw-bold mb-3">Остались вопросы?</h2>
+        <p class="lead mb-4">Оставьте заявку, и администратор свяжется с вами в течение часа.</p>
+        <button class="btn btn-warning btn-lg fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">
+          <i class="bi bi-pencil-square"></i> Оставить заявку
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Общий футер (с почтой и временем в новом порядке) -->
+  <footer class="site-footer text-white py-5 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3"><i class="bi bi-lightning-charge-fill text-warning"></i> FitZone</h3>
+          <p class="text-white-50 mb-0">Современный фитнес-клуб для всех уровней подготовки. Работаем с 2015 года.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3">Навигация</h3>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="index.html">Главная</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="catalog.html">Расписание</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="product.html">Абонемент</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3">Контакты</h3>
+          <ul class="list-unstyled text-white-50 mb-0">
+            <li class="mb-2"><i class="bi bi-geo-alt-fill text-warning"></i> г. Москва, ул. Спортивная, д. 12</li>
+            <li class="mb-2"><i class="bi bi-telephone-fill text-warning"></i> +7 (495) 123-45-67</li>
+            <li class="mb-2"><i class="bi bi-clock-fill text-warning"></i> Круглосуточно, 24/7</li>
+            <li class="mb-2"><i class="bi bi-envelope-fill text-warning"></i> info@fitzone.ru</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="mb-0 text-white-50 text-center">&copy; 2026 FitZone. Учебный проект.</p>
+    </div>
+  </footer>
+
+  <!-- Модальное окно заявки (общее для всех страниц) -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h2 class="modal-title h5" id="orderModalLabel">
+            <i class="bi bi-pencil-square"></i> Форма заявки
+          </h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-info" role="alert">
+            <i class="bi bi-info-circle-fill"></i> Заполните форму. Поля со звёздочкой обязательны. Первое занятие — бесплатно!
+          </div>
+          <div class="alert alert-success d-none" id="successAlert" role="alert">
+            <i class="bi bi-check-circle-fill"></i> <strong>Заявка отправлена!</strong> Администратор свяжется с вами в течение часа.
+          </div>
+          <form id="orderForm" novalidate>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label for="order-name" class="form-label">Имя *</label>
+                <input id="order-name" name="name" type="text" class="form-control" required minlength="2">
+                <div class="invalid-feedback">Введите имя (минимум 2 символа).</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="order-email" class="form-label">E-mail *</label>
+                <input id="order-email" name="email" type="email" class="form-control" required>
+                <div class="invalid-feedback">Введите корректный e-mail.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="order-phone" class="form-label">Телефон *</label>
+                <div class="input-group">
+                  <span class="input-group-text">+7</span>
+                  <input id="order-phone" name="phone" type="tel" class="form-control" placeholder="900 000-00-00" required>
+                  <div class="invalid-feedback">Введите телефон.</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="order-direction" class="form-label">Направление</label>
+                <select id="order-direction" name="direction" class="form-select">
+                  <option selected>Выберите направление</option>
+                  <option value="crossfit">CrossFit</option>
+                  <option value="yoga">Йога</option>
+                  <option value="swim">Плавание</option>
+                  <option value="pilates">Пилатес</option>
+                  <option value="box">Бокс</option>
+                  <option value="stretch">Stretching</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="order-comment" class="form-label">Комментарий</label>
+                <textarea id="order-comment" name="comment" class="form-control" rows="4" placeholder="Расскажите о ваших целях и уровне подготовки"></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input id="order-agree" class="form-check-input" type="checkbox" required>
+                  <label class="form-check-label" for="order-agree">Я согласен на обработку персональных данных *</label>
+                  <div class="invalid-feedback">Необходимо согласие.</div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-primary" id="submitOrder">Отправить заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Кнопка «Наверх» переоформленная -->
+  <button class="scroll-top-button" id="scrollTopButton" type="button" aria-label="Наверх">
+    <i class="bi bi-arrow-up"></i> Наверх
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

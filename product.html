@@ -44,7 +44,7 @@
 
   <main class="container my-4">
 
-    <!-- Hero-блок абонемента (1/2 экрана) -->
+    <!-- Hero-блок абонемента -->
     <div class="row g-4 align-items-center">
       <div class="col-12 col-lg-6">
         <div class="card shadow-sm border-0">
@@ -125,7 +125,7 @@
       </div>
     </section>
 
-    <!-- Сравнение тарифов (1/2 экрана) -->
+    <!-- Сравнение тарифов -->
     <section class="mt-5">
       <h2 class="h4 mb-4 text-center">Сравнение тарифов</h2>
       <div class="row g-4">
@@ -175,7 +175,7 @@
       </div>
     </section>
 
-    <!-- Accordion FAQ (2/2 экрана) -->
+    <!-- Accordion FAQ -->
     <section class="mt-5">
       <h2 class="h4 mb-3">Частые вопросы</h2>
       <div class="accordion" id="faqAccordion">
@@ -242,63 +242,265 @@
       </div>
     </section>
 
+    <!-- Секции для каждого направления (якоря) -->
+    <section class="mt-5" id="crossfit">
+      <h2 class="h4 mb-3">CrossFit</h2>
+      <div class="card p-4 shadow-sm">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="images/crossfit.jpg" class="img-fluid rounded" alt="CrossFit тренировки в FitZone">
+          </div>
+          <div class="col-12 col-md-8">
+            <span class="badge bg-danger mb-2">Хит</span>
+            <h3 class="h5">Высокоинтенсивные функциональные тренировки</h3>
+            <p class="text-muted">CrossFit — это система функциональных тренировок высокой интенсивности, сочетающая элементы тяжёлой атлетики, гимнастики и кардио. Развивает силу, выносливость, гибкость и координацию.</p>
+            <ul class="text-muted mb-3">
+              <li><i class="bi bi-clock-fill text-primary"></i> Пн, Ср, Пт — 19:00</li>
+              <li><i class="bi bi-person-fill text-primary"></i> Тренер: Алексей Петров (опыт 8 лет)</li>
+              <li><i class="bi bi-people-fill text-primary"></i> Группа до 12 человек</li>
+              <li><i class="bi bi-hourglass-split text-primary"></i> Длительность: 60 минут</li>
+            </ul>
+            <p class="fs-5 fw-bold text-primary mb-3">3 500 руб./мес</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Записаться</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5" id="yoga">
+      <h2 class="h4 mb-3">Йога</h2>
+      <div class="card p-4 shadow-sm">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="images/yoga.jpg" class="img-fluid rounded" alt="Занятия йогой в FitZone">
+          </div>
+          <div class="col-12 col-md-8">
+            <span class="badge bg-success mb-2">Новинка</span>
+            <h3 class="h5">Гармония тела и разума</h3>
+            <p class="text-muted">Хатха-йога и пранаяма для всех уровней подготовки. Занятия помогают снять стресс, улучшить гибкость, укрепить мышцы и найти внутренний баланс.</p>
+            <ul class="text-muted mb-3">
+              <li><i class="bi bi-clock-fill text-success"></i> Вт, Чт — 10:00</li>
+              <li><i class="bi bi-person-fill text-success"></i> Тренер: Мария Иванова (опыт 10 лет)</li>
+              <li><i class="bi bi-people-fill text-success"></i> Группа до 10 человек</li>
+              <li><i class="bi bi-hourglass-split text-success"></i> Длительность: 75 минут</li>
+            </ul>
+            <p class="fs-5 fw-bold text-primary mb-3">2 800 руб./мес</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Записаться</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5" id="swim">
+      <h2 class="h4 mb-3">Плавание</h2>
+      <div class="card p-4 shadow-sm">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="images/swimming.jpg" class="img-fluid rounded" alt="Бассейн 25 метров в FitZone">
+          </div>
+          <div class="col-12 col-md-8">
+            <span class="badge bg-warning text-dark mb-2">Скидка</span>
+            <h3 class="h5">Занятия в бассейне 25 метров</h3>
+            <p class="text-muted">Индивидуальные и групповые занятия плаванием с тренером. Подходит для любого уровня подготовки — от новичков до продвинутых пловцов.</p>
+            <ul class="text-muted mb-3">
+              <li><i class="bi bi-clock-fill text-warning"></i> Ежедневно — 7:00–22:00</li>
+              <li><i class="bi bi-person-fill text-warning"></i> Тренер: Дмитрий Сидоров (мастер спорта)</li>
+              <li><i class="bi bi-people-fill text-warning"></i> Группа до 8 человек</li>
+              <li><i class="bi bi-hourglass-split text-warning"></i> Длительность: 45 минут</li>
+            </ul>
+            <p class="fs-5 fw-bold text-primary mb-3">2 200 руб./мес</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Записаться</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5" id="pilates">
+      <h2 class="h4 mb-3">Пилатес</h2>
+      <div class="card p-4 shadow-sm">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="images/pilates.jpg" class="img-fluid rounded" alt="Пилатес в FitZone">
+          </div>
+          <div class="col-12 col-md-8">
+            <span class="badge bg-info text-dark mb-2">Групповое</span>
+            <h3 class="h5">Укрепление мышц кора и осанки</h3>
+            <p class="text-muted">Пилатес — система упражнений, направленная на укрепление глубоких мышц, улучшение осанки и координации. Подходит для восстановления после травм.</p>
+            <ul class="text-muted mb-3">
+              <li><i class="bi bi-clock-fill text-info"></i> Пн, Ср — 18:00</li>
+              <li><i class="bi bi-person-fill text-info"></i> Тренер: Анна Козлова (опыт 7 лет)</li>
+              <li><i class="bi bi-people-fill text-info"></i> Группа до 10 человек</li>
+              <li><i class="bi bi-hourglass-split text-info"></i> Длительность: 60 минут</li>
+            </ul>
+            <p class="fs-5 fw-bold text-primary mb-3">2 600 руб./мес</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Записаться</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5" id="box">
+      <h2 class="h4 mb-3">Бокс</h2>
+      <div class="card p-4 shadow-sm">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="images/boxing.jpg" class="img-fluid rounded" alt="Бокс в FitZone">
+          </div>
+          <div class="col-12 col-md-8">
+            <span class="badge bg-secondary mb-2">Силовое</span>
+            <h3 class="h5">Единоборства и функциональная сила</h3>
+            <p class="text-muted">Тренировки по боксу для всех уровней — от постановки удара до спаррингов. Развивает скорость, реакцию, координацию и уверенность в себе.</p>
+            <ul class="text-muted mb-3">
+              <li><i class="bi bi-clock-fill text-secondary"></i> Вт, Чт, Сб — 20:00</li>
+              <li><i class="bi bi-person-fill text-secondary"></i> Тренер: Иван Смирнов (КМС по боксу)</li>
+              <li><i class="bi bi-people-fill text-secondary"></i> Группа до 10 человек</li>
+              <li><i class="bi bi-hourglass-split text-secondary"></i> Длительность: 75 минут</li>
+            </ul>
+            <p class="fs-5 fw-bold text-primary mb-3">3 200 руб./мес</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Записаться</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5" id="stretch">
+      <h2 class="h4 mb-3">Stretching</h2>
+      <div class="card p-4 shadow-sm">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="images/stretching.jpg" class="img-fluid rounded" alt="Stretching в FitZone">
+          </div>
+          <div class="col-12 col-md-8">
+            <span class="badge bg-primary mb-2">Растяжка</span>
+            <h3 class="h5">Гибкость и расслабление</h3>
+            <p class="text-muted">Занятия по стретчингу для развития гибкости, снятия мышечного напряжения и улучшения подвижности суставов. Идеально как самостоятельное направление и как дополнение к силовым тренировкам.</p>
+            <ul class="text-muted mb-3">
+              <li><i class="bi bi-clock-fill text-primary"></i> Пн–Пт — 9:00</li>
+              <li><i class="bi bi-person-fill text-primary"></i> Тренер: Ольга Белова (опыт 6 лет)</li>
+              <li><i class="bi bi-people-fill text-primary"></i> Группа до 12 человек</li>
+              <li><i class="bi bi-hourglass-split text-primary"></i> Длительность: 45 минут</li>
+            </ul>
+            <p class="fs-5 fw-bold text-primary mb-3">2 000 руб./мес</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Записаться</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA-блок -->
     <section class="bg-primary text-white py-5 mt-5 rounded-3">
       <div class="container text-center">
         <h2 class="display-6 fw-bold mb-3">Готов начать тренировки?</h2>
         <p class="lead mb-4">Оформи абонемент сегодня и получи первое занятие бесплатно!</p>
-        <a class="btn btn-warning btn-lg fw-bold" href="order.html">
+        <button class="btn btn-warning btn-lg fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">
           <i class="bi bi-telephone-fill"></i> Записаться на пробное занятие
-        </a>
+        </button>
       </div>
     </section>
 
   </main>
 
-  <!-- Тёмный подвал -->
-<footer class="site-footer text-white py-5 mt-5">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-12 col-md-4">
-        <h3 class="h5 fw-bold mb-3">
-          <i class="bi bi-lightning-charge-fill text-warning"></i> FitZone
-        </h3>
-        <p class="text-white-50 mb-0">
-          Современный фитнес-клуб для всех уровней подготовки. Работаем с 2015 года.
-        </p>
-      </div>
-      <div class="col-12 col-md-4">
-        <h3 class="h5 fw-bold mb-3">Навигация</h3>
-        <ul class="list-unstyled mb-0">
-          <li class="mb-2"><a class="text-white-50 text-decoration-none" href="index.html">Главная</a></li>
-          <li class="mb-2"><a class="text-white-50 text-decoration-none" href="catalog.html">Расписание</a></li>
-          <li class="mb-2"><a class="text-white-50 text-decoration-none" href="product.html">Абонемент</a></li>
-          <li class="mb-2"><a class="text-white-50 text-decoration-none" href="order.html">Заявка</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4">
-        <h3 class="h5 fw-bold mb-3">Контакты</h3>
-        <ul class="list-unstyled text-white-50 mb-0">
-          <li class="mb-2"><i class="bi bi-geo-alt-fill text-warning"></i> г. Москва, ул. Спортивная, д. 12</li>
-          <li class="mb-2"><i class="bi bi-telephone-fill text-warning"></i> +7 (495) 123-45-67</li>
-          <li class="mb-2"><i class="bi bi-envelope-fill text-warning"></i> info@fitzone.ru</li>
-          <li class="mb-2"><i class="bi bi-clock-fill text-warning"></i> Круглосуточно, 24/7</li>
-        </ul>
-      </div>
-    </div>
-    <hr class="border-secondary my-4">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-6">
-        <p class="mb-0 text-white-50">&copy; 2026 FitZone. Учебный проект.</p>
-      </div>
-      <div class="col-12 col-md-6 text-md-end">
-        <a class="text-white-50 me-3" href="#"><i class="bi bi-telegram fs-5"></i></a>
-        <a class="text-white-50 me-3" href="#"><i class="bi bi-instagram fs-5"></i></a>
-        <a class="text-white-50" href="#"><i class="bi bi-youtube fs-5"></i></a>
+  <!-- Модальное окно -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h2 class="modal-title h5" id="orderModalLabel">
+            <i class="bi bi-pencil-square"></i> Быстрая запись на занятие
+          </h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-success d-none" id="successAlert" role="alert">
+            <i class="bi bi-check-circle-fill"></i> <strong>Заявка отправлена!</strong> Администратор свяжется с вами в течение часа.
+          </div>
+          <p class="text-muted mb-3">Оставьте контакты — мы перезвоним в течение часа.</p>
+          <form id="orderForm" novalidate>
+            <div class="mb-3">
+              <label for="modal-name" class="form-label">Имя *</label>
+              <input id="modal-name" type="text" class="form-control" required minlength="2">
+              <div class="invalid-feedback">Введите имя (минимум 2 символа).</div>
+            </div>
+            <div class="mb-3">
+              <label for="modal-phone" class="form-label">Телефон *</label>
+              <div class="input-group">
+                <span class="input-group-text">+7</span>
+                <input id="modal-phone" type="tel" class="form-control" placeholder="900 000-00-00" required>
+                <div class="invalid-feedback">Введите телефон.</div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="modal-direction" class="form-label">Направление</label>
+              <select id="modal-direction" class="form-select">
+                <option selected>Выберите направление</option>
+                <option value="crossfit">CrossFit</option>
+                <option value="yoga">Йога</option>
+                <option value="swim">Плавание</option>
+                <option value="pilates">Пилатес</option>
+                <option value="box">Бокс</option>
+                <option value="stretch">Stretching</option>
+              </select>
+            </div>
+            <div class="form-check mb-3">
+              <input id="modal-agree" class="form-check-input" type="checkbox" required>
+              <label class="form-check-label" for="modal-agree">
+                Я согласен на обработку персональных данных *
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-primary" id="submitOrder">
+            <i class="bi bi-send-fill"></i> Отправить заявку
+          </button>
+        </div>
       </div>
     </div>
   </div>
-</footer>
+
+  <!-- Тёмный подвал -->
+  <footer class="site-footer text-white py-5 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3">
+            <i class="bi bi-lightning-charge-fill text-warning"></i> FitZone
+          </h3>
+          <p class="text-white-50 mb-0">Современный фитнес-клуб для всех уровней подготовки. Работаем с 2015 года.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3">Навигация</h3>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="index.html">Главная</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="catalog.html">Расписание</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="product.html">Абонемент</a></li>
+            <li class="mb-2"><a class="text-white-50 text-decoration-none" href="order.html">Заявка</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="h5 fw-bold mb-3">Контакты</h3>
+          <ul class="list-unstyled text-white-50 mb-0">
+            <li class="mb-2"><i class="bi bi-geo-alt-fill text-warning"></i> г. Москва, ул. Спортивная, д. 12</li>
+            <li class="mb-2"><i class="bi bi-telephone-fill text-warning"></i> +7 (495) 123-45-67</li>
+            <li class="mb-2"><i class="bi bi-envelope-fill text-warning"></i> info@fitzone.ru</li>
+            <li class="mb-2"><i class="bi bi-clock-fill text-warning"></i> Круглосуточно, 24/7</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <p class="mb-0 text-white-50">&copy; 2026 FitZone. Учебный проект.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a class="text-white-50 me-3" href="#"><i class="bi bi-telegram fs-5"></i></a>
+          <a class="text-white-50 me-3" href="#"><i class="bi bi-instagram fs-5"></i></a>
+          <a class="text-white-50" href="#"><i class="bi bi-youtube fs-5"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Кнопка «Наверх» -->
   <button class="scroll-top-button" id="scrollTopButton" type="button" aria-label="Наверх">
