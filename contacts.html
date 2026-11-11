@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Контакты фитнес-клуба FitZone: адрес, телефон, email, часы работы и форма обратной связи.">
+  <meta name="description" content="Контакты фитнес-клуба FitZone: адрес, телефон, email, часы работы, интерактивная карта и форма обратной связи.">
   <title>Контакты — FitZone</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -45,7 +45,7 @@
   <main class="container my-4">
     <h1 class="h2 mb-4">Контакты фитнес-клуба FitZone</h1>
 
-    <!-- Сетка с контактной информацией -->
+    <!-- 4 карточки с контактами -->
     <div class="row g-4 mb-5">
       <div class="col-12 col-md-6 col-lg-3">
         <div class="card h-100 text-center p-4 shadow-sm border-0">
@@ -89,29 +89,31 @@
       </div>
     </div>
 
-    <!-- Карта (заглушка) и форма -->
-    <div class="col-12 col-lg-6">
-  <h2 class="h4 mb-3">Как нас найти</h2>
-  <div class="card border-0 shadow-sm overflow-hidden">
-    <iframe
-      class="map-frame"
-      src="https://yandex.ru/map-widget/v1/?text=Москва, Спортивная улица, 12&z=16"
-      width="100%"
-      height="380"
-      frameborder="0"
-      allowfullscreen="true"
-      loading="lazy"
-      title="Карта: фитнес-клуб FitZone, Москва, ул. Спортивная, д. 12">
-    </iframe>
-  </div>
-  <p class="text-muted small mt-2 mb-0">
-    <i class="bi bi-geo-alt-fill text-danger"></i>
-    Мы находимся в 5 минутах ходьбы от станции метро «Спортивная». Бесплатная парковка для клиентов клуба.
-  </p>
-</div>
+    <!-- ОДНА строка сетки: карта слева + форма справа -->
+    <div class="row g-4">
+      <div class="col-12 col-lg-6">
+        <h2 class="h4 mb-3">Как нас найти</h2>
+        <div class="card border-0 shadow-sm overflow-hidden">
+          <iframe
+            class="map-frame"
+            src="https://yandex.ru/map-widget/v1/?text=Москва, Спортивная улица, 12&z=16"
+            width="100%"
+            height="380"
+            frameborder="0"
+            allowfullscreen="true"
+            loading="lazy"
+            title="Карта: фитнес-клуб FitZone, Москва, ул. Спортивная, д. 12">
+          </iframe>
+        </div>
+        <p class="text-muted small mt-2 mb-0">
+          <i class="bi bi-geo-alt-fill text-danger"></i>
+          Мы находимся в 5 минутах ходьбы от станции метро «Спортивная». Бесплатная парковка для клиентов клуба.
+        </p>
+      </div>
+
       <div class="col-12 col-lg-6">
         <h2 class="h4 mb-3">Остались вопросы?</h2>
-        <div class="card border-0 shadow-sm p-4">
+        <div class="card border-0 shadow-sm p-4 h-100">
           <p class="text-muted mb-4">Оставьте контакты — мы перезвоним в течение часа и ответим на все вопросы.</p>
           <form id="contactForm" novalidate>
             <div class="mb-3">
@@ -129,7 +131,7 @@
             </div>
             <div class="mb-3">
               <label for="contact-message" class="form-label">Сообщение</label>
-              <textarea id="contact-message" class="form-control" rows="3" placeholder="Ваш вопрос"></textarea>
+              <textarea id="contact-message" class="form-control" rows="4" placeholder="Ваш вопрос"></textarea>
             </div>
             <div class="form-check mb-3">
               <input id="contact-agree" class="form-check-input" type="checkbox" required>
@@ -151,7 +153,7 @@
     <!-- Соцсети -->
     <section class="mt-5 text-center">
       <h2 class="h4 mb-4">Мы в социальных сетях</h2>
-      <div class="d-flex justify-content-center gap-3">
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
         <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-telegram"></i> Telegram</a>
         <a href="#" class="btn btn-outline-danger btn-lg"><i class="bi bi-youtube"></i> YouTube</a>
         <a href="#" class="btn btn-outline-warning btn-lg"><i class="bi bi-instagram"></i> Instagram</a>
@@ -160,7 +162,7 @@
     </section>
   </main>
 
-  <!-- Модальное окно -->
+  <!-- Модальное окно быстрой записи -->
   <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -172,7 +174,7 @@
         </div>
         <div class="modal-body">
           <div class="alert alert-success d-none" id="successAlert" role="alert">
-            <i class="bi bi-check-circle-fill"></i> <strong>Заявка отправлена!</strong>
+            <i class="bi bi-check-circle-fill"></i> <strong>Заявка отправлена!</strong> Администратор свяжется с вами в течение часа.
           </div>
           <p class="text-muted mb-3">Оставьте контакты — мы перезвоним в течение часа.</p>
           <form id="orderForm" novalidate>
@@ -188,6 +190,18 @@
                 <input id="modal-phone" type="tel" class="form-control" placeholder="900 000-00-00" required>
                 <div class="invalid-feedback">Введите телефон.</div>
               </div>
+            </div>
+            <div class="mb-3">
+              <label for="modal-direction" class="form-label">Направление</label>
+              <select id="modal-direction" class="form-select">
+                <option selected>Выберите направление</option>
+                <option value="crossfit">CrossFit</option>
+                <option value="yoga">Йога</option>
+                <option value="swim">Плавание</option>
+                <option value="pilates">Пилатес</option>
+                <option value="box">Бокс</option>
+                <option value="stretch">Stretching</option>
+              </select>
             </div>
             <div class="form-check mb-3">
               <input id="modal-agree" class="form-check-input" type="checkbox" required>
@@ -252,6 +266,7 @@
     </div>
   </footer>
 
+  <!-- Кнопка «Наверх» -->
   <button class="scroll-top-button" id="scrollTopButton" type="button" aria-label="Наверх">
     <i class="bi bi-arrow-up"></i>
   </button>
@@ -259,7 +274,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script>
-    // Валидация формы контактов
+    // Валидация формы обратной связи на странице контактов
     const contactForm = document.getElementById('contactForm');
     const contactSuccess = document.getElementById('contactSuccess');
     if (contactForm) {
