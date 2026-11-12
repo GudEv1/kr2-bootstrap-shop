@@ -162,6 +162,73 @@
     </section>
   </main>
 
+      <!-- НОВЫЙ БЛОК: Часто задаваемые вопросы -->
+    <section class="mt-5">
+      <h2 class="h4 mb-4 text-center">Часто задаваемые вопросы</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true">
+              Как добраться до клуба?
+            </button>
+          </h3>
+          <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Клуб находится в 5 минутах ходьбы от станции метро «Спортивная». Рядом остановка автобусов №12, №45. Для клиентов клуба доступна бесплатная охраняемая парковка на 50 мест.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false">
+              Нужна ли медицинская справка для бассейна?
+            </button>
+          </h3>
+          <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Да, для посещения бассейна справка обязательна. Её можно оформить у нашего врача прямо в клубе за 500 руб. или принести свою из поликлиники. Для тренажёрного зала справка не обязательна, но рекомендуется.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false">
+              Есть ли скидки для студентов и пенсионеров?
+            </button>
+          </h3>
+          <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Да! Студентам очной формы обучения предоставляется скидка 15% при предъявлении студенческого билета. Пенсионерам — скидка 20% в утренние часы (с 7:00 до 12:00). Скидки не суммируются с другими акциями.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false">
+              Можно ли заморозить абонемент?
+            </button>
+          </h3>
+          <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Да, абонемент можно заморозить на срок до 14 дней в году бесплатно. Для заморозки на больший срок обратитесь к администратору — стоимость услуги составляет 200 руб. за каждый дополнительный день.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false">
+              Есть ли пробное занятие?
+            </button>
+          </h3>
+          <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Да! Первое пробное занятие по любому направлению — бесплатно. Запишитесь через форму на сайте или позвоните нам, и администратор подберёт удобное время.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   <!-- Модальное окно -->
   <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -256,11 +323,11 @@
         <div class="col-12 col-md-6">
           <p class="mb-0 text-white-50">&copy; 2026 FitZone. Все права защищены.</p>
         </div>
-        <div class="col-12 col-md-6 text-md-end">
-          <a class="text-white-50 me-3" href="#"><i class="bi bi-telegram fs-5"></i></a>
-          <a class="text-white-50 me-3" href="#"><i class="bi bi-instagram fs-5"></i></a>
-          <a class="text-white-50" href="#"><i class="bi bi-youtube fs-5"></i></a>
-        </div>
+            <div class="col-12 col-md-6 text-md-end social-links">
+            <a class="text-white-50 me-3" href="#" aria-label="Telegram"><i class="bi bi-telegram fs-5"></i></a>
+            <a class="text-white-50 me-3" href="#" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+            <a class="text-white-50" href="#" aria-label="YouTube"><i class="bi bi-youtube fs-5"></i></a>
+            </div>
       </div>
     </div>
   </footer>
