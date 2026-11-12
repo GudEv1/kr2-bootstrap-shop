@@ -100,14 +100,3 @@ body {
   border: 0;
 }
 
-/* Сдвигаем иконки соцсетей в подвале левее, чтобы не перекрывались кнопкой «Наверх» */
-.site-footer .social-links {
-  padding-right: 80px;
-}
-
-@media (max-width: 767px) {
-  .site-footer .social-links {
-    padding-right: 0;
-    text-align: center;
-  }
-}
