@@ -380,3 +380,41 @@ body {
     bottom: 80px;
   }
 }
+
+/* Кнопки темы и поиска в навигации */
+.theme-toggle,
+.search-toggle {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffffff; /* белые иконки на тёмном фоне */
+  transition: all 0.3s ease;
+  margin-left: 8px;
+}
+
+.theme-toggle:hover,
+.search-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffc107;
+  color: #ffc107;
+  transform: scale(1.1);
+}
+
+/* В тёмной теме иконки жёлтые */
+[data-theme="dark"] .theme-toggle,
+[data-theme="dark"] .search-toggle {
+  border-color: #fbbf24;
+  color: #fbbf24;
+}
+
+[data-theme="dark"] .theme-toggle:hover,
+[data-theme="dark"] .search-toggle:hover {
+  background-color: rgba(251, 191, 36, 0.15);
+}
