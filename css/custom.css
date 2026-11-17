@@ -203,6 +203,18 @@ body {
   color: #cbd5e1 !important;
 }
 
+[data-theme="dark"] {
+
+  /* Bootstrap-переменные, которые чинят заголовки и текст */
+  --bs-body-color: #f1f5f9;
+  --bs-heading-color: #f1f5f9;   /* ← главный фикс: заголовки становятся светлыми */
+  --bs-emphasis-color: #f1f5f9;
+  --bs-secondary-color: #94a3b8;
+  --bs-border-color: #334155;
+  --bs-link-color: #6ea8fe;
+  --bs-link-hover-color: #8ec3ff;
+}
+
 /* Кнопка переключения темы */
 .theme-toggle {
   background: none;
@@ -417,4 +429,48 @@ body {
 [data-theme="dark"] .theme-toggle:hover,
 [data-theme="dark"] .search-toggle:hover {
   background-color: rgba(251, 191, 36, 0.15);
+}
+
+/* Тёмная тема: доп. правки видимости */
+[data-theme="dark"] .card-title,
+[data-theme="dark"] .accordion-button,
+[data-theme="dark"] .accordion-body,
+[data-theme="dark"] .list-group-item,
+[data-theme="dark"] .modal-title,
+[data-theme="dark"] .modal-body,
+[data-theme="dark"] .form-label,
+[data-theme="dark"] .breadcrumb-item.active,
+[data-theme="dark"] .table > :not(caption) > * > * {
+  color: var(--text-main);
+}
+
+/* Заголовки внутри карточек направлений */
+[data-theme="dark"] .card .h5,
+[data-theme="dark"] .card h3,
+[data-theme="dark"] .card h2 {
+  color: var(--text-main);
+}
+
+/* Alert'ы в тёмной теме читаются лучше */
+[data-theme="dark"] .alert-info {
+  color: #b3d9ff;
+  background-color: rgba(13, 110, 253, 0.15);
+  border-color: rgba(13, 110, 253, 0.4);
+}
+
+[data-theme="dark"] .alert-warning {
+  color: #ffe08a;
+  background-color: rgba(255, 193, 7, 0.12);
+  border-color: rgba(255, 193, 7, 0.4);
+}
+
+[data-theme="dark"] .alert-success {
+  color: #75e8a5;
+  background-color: rgba(25, 135, 84, 0.15);
+  border-color: rgba(25, 135, 84, 0.4);
+}
+
+/* Текст в футере остаётся светлым */
+[data-theme="dark"] .site-footer .text-white-50 {
+  color: #cbd5e1 !important;
 }
